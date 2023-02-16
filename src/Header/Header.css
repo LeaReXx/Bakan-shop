@@ -1,0 +1,14 @@
+.on-header-menu {
+    font-size: 14px;
+    
+}
+
+.change-language-icon {
+    width: 20px;
+}
+
+.change-lang-drop-down .fa-chevron-down {
+    margin: 0 5px;
+    font-size: 13px;
+    justify-content: space-between;
+}

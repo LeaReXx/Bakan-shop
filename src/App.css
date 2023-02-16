@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+.fade-in {
+  position: absolute;
+  animation: fadeIn 0.2s linear;
+  visibility: visible;
+}
+
+p,span,ul,li,div {
+    padding: 0;
+    margin: 0;
+}
+@keyframes fadeIn {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: -50px;
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  position: absolute;
+  animation: fadeOut 0.2s linear;
+  visibility: hidden;
+}
+
+@keyframes fadeOut {
+  from {
+    bottom: -50px;
+    opacity: 1;
+  }
+  to {
+    bottom: -100px;
+    opacity: 0;
+  }
+}
