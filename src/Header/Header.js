@@ -20,6 +20,7 @@ export default class Header extends Component {
       ? this.setState({ langDropDown: "fade-in" })
       : this.setState({ langDropDown: "fade-out" });
   }
+
   render() {
     return (
       <header>
@@ -99,16 +100,39 @@ export default class Header extends Component {
             </div>
           </div>
         </div>
-        <div>
-            <div>
-                
-            </div>
-            <div>
+        <div className="container d-flex flex-column justify-content-center my-2 gap-3">
+          <div className="header-logo-parent m-auto">
+            <img
+              src="./imgs/bakan-logo.png"
+              alt="Header Logo"
+              className="w-100"
+            />
+          </div>
+          <div className="header-search-parent">
+            <div className="header-search rounded-5 m-auto d-flex justify-content-between align-items-center">
+              <div className="header-search-category-parent border-end d-none d-md-block px-3">
+                <select className="border-0">
+                  <option value="">Food</option>
+                  <option value="">Car</option>
+                  <option value="">Electronic</option>
+                  <option value="">House</option>
+                  <option value="">Body</option>
+                  <option value="">Women</option>
+                </select>
+              </div>
+            <div className="header-search-input-parent ">
+            <input type="text" className="border-0 ps-3 w-100" placeholder="Search For Products" />
 
             </div>
-            <div>
-                
+
+              <div className="header-search-submit-parent d-flex justify-content-center align-items-center">
+                <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+              </div>
             </div>
+          </div>
+          <div className="header-icons-parent">
+            
+          </div>
         </div>
       </header>
     );

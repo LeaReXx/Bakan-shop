@@ -12,3 +12,53 @@
     font-size: 13px;
     justify-content: space-between;
 }
+
+
+.header-logo-parent {
+    width: 60%;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+
+.header-search {
+    width: 90%;
+    height: 50px;
+    border: 2px solid var(--main-color);
+    overflow: hidden;
+}
+
+
+.header-search-submit-parent {
+    background-color: var(--main-color);
+    height: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 25%;
+    min-width: 50px;
+    max-width: 75px;
+}
+
+.header-search .fa-magnifying-glass {
+    color: #fff;
+    display: block;
+}
+
+.header-search-input-parent {
+    width: 80%;
+}
+.header-search-input-parent input::placeholder {
+    font-size: 14px;
+}
+
+.header-search-input-parent input:focus,
+.header-search-category-parent select {
+    border: none;
+    outline: none;
+}
+
+@media screen and (min-width:768px) {
+    .header-search-category-parent {
+        width: 20%;
+    }
+}
