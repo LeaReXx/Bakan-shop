@@ -1,3 +1,7 @@
+:root {
+    --main-color: rgb(255, 102, 0);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -18,7 +22,7 @@ p,span,ul,li,div {
 }
 @keyframes fadeIn {
   from {
-    bottom: -100px;
+    bottom: -60px;
     opacity: 0;
   }
   to {
@@ -39,7 +43,7 @@ p,span,ul,li,div {
     opacity: 1;
   }
   to {
-    bottom: -100px;
+    bottom: -60px;
     opacity: 0;
   }
 }
