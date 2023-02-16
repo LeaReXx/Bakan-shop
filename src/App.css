@@ -47,3 +47,13 @@ p,span,ul,li,div {
     opacity: 0;
   }
 }
+
+
+.nav-link {
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+}

@@ -25,7 +25,7 @@ export default class Header extends Component {
     return (
       <header>
         <div className="border-bottom">
-          <div className="on-header-menu text-muted d-md-flex justify-content-between text-center my-1 py-2 container align-items-center">
+          <div className="on-header-menu container-fluid container-lg text-muted d-md-flex justify-content-between text-center my-1 py-2 align-items-center">
             <div>
               <p>Hello Customer, welcome to Bakan Market!</p>
             </div>
@@ -33,17 +33,17 @@ export default class Header extends Component {
               <div>
                 <ul className="list-unstyled d-none d-md-flex">
                   <li className="px-2 border-end">
-                    <a href="" className="nav-link">
+                    <a href="https://reactjs.org/" className="nav-link">
                       Store Location
                     </a>
                   </li>
                   <li className="px-2 border-end">
-                    <a href="" className="nav-link">
+                    <a href="https://reactjs.org/" className="nav-link">
                       Track Your Orders
                     </a>
                   </li>
                   <li className="px-2 border-end">
-                    <a href="" className="nav-link">
+                    <a href="https://reactjs.org/" className="nav-link">
                       FAQs
                     </a>
                   </li>
@@ -66,6 +66,7 @@ export default class Header extends Component {
                   className={`bg-white ${this.state.langDropDown} w-50 d-flex flex-column w-100 border rounded-2`}
                 >
                   <a
+                    href="https://reactjs.org/"
                     value="en"
                     onClick={this.changeLanguage}
                     className=" nav-link me-3"
@@ -78,6 +79,7 @@ export default class Header extends Component {
                     English
                   </a>
                   <a
+                    href="https://reactjs.org/"
                     value="ru"
                     onClick={this.changeLanguage}
                     className=" nav-link me-3"
@@ -100,17 +102,17 @@ export default class Header extends Component {
             </div>
           </div>
         </div>
-        <div className="container d-flex flex-column justify-content-center my-2 gap-3">
-          <div className="header-logo-parent m-auto">
+        <div className="container-fluid container-lg row mt-md-4 mx-auto gy-3 gy-md-0 justify-content-center">
+          <div className="header-logo-parent col-8 col-md-3  align-self-center">
             <img
               src="./imgs/bakan-logo.png"
               alt="Header Logo"
               className="w-100"
             />
           </div>
-          <div className="header-search-parent">
+          <div className="header-search-parent col-12 col-md-5 col-lg-6  align-self-center">
             <div className="header-search rounded-5 m-auto d-flex justify-content-between align-items-center">
-              <div className="header-search-category-parent border-end d-none d-md-block px-3">
+              <div className="header-search-category-parent border-end d-none d-lg-block px-3">
                 <select className="border-0">
                   <option value="">Food</option>
                   <option value="">Car</option>
@@ -120,18 +122,43 @@ export default class Header extends Component {
                   <option value="">Women</option>
                 </select>
               </div>
-            <div className="header-search-input-parent ">
-            <input type="text" className="border-0 ps-3 w-100" placeholder="Search For Products" />
-
-            </div>
+              <div className="header-search-input-parent">
+                <input
+                  type="text"
+                  className="border-0 ps-3 w-100"
+                  placeholder="Search For Products"
+                />
+              </div>
 
               <div className="header-search-submit-parent d-flex justify-content-center align-items-center">
                 <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
               </div>
             </div>
           </div>
-          <div className="header-icons-parent">
-            
+          <div className="header-icons-parent d-flex justify-content-between align-items-center col-10 col-md-4 col-lg-3 align-self-center">
+            <div className="position-relative nav-link">
+              <span class="header-shopping-cart-count-badge position-absolute border border-2 border-white border-white top-0 start-100 translate-middle badge rounded-pill ">
+                5
+              </span>
+              <FontAwesomeIcon icon="fa-regular fa-heart" />
+            </div>
+            <div className="position-relative nav-link">
+              <span class="header-wishlist-count-badge position-absolute border border-2 border-white border-white top-0 start-100 translate-middle badge rounded-pill ">
+                10
+              </span>
+              <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
+            </div>
+            <div className="position-relative d-flex align-items-center">
+              <FontAwesomeIcon icon="fa-regular fa-user" />
+              <div className="px-2">
+                <a href="https://reactjs.org/" className="nav-link fs-6">
+                  Login
+                </a>
+                <a href="https://reactjs.org/" className="nav-link fs-6">
+                  Register
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </header>
