@@ -28,7 +28,7 @@ export default class Header extends Component {
             <div>
               <p>Hello Customer, welcome to Bakan Market!</p>
             </div>
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center mt-2 mt-md-0">
               <div>
                 <ul className="list-unstyled d-none d-md-flex">
                   <li className="px-2 border-end">
@@ -100,7 +100,15 @@ export default class Header extends Component {
           </div>
         </div>
         <div>
-            <div></div>
+            <div>
+                
+            </div>
+            <div>
+
+            </div>
+            <div>
+                
+            </div>
         </div>
       </header>
     );
