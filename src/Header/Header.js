@@ -102,7 +102,7 @@ export default class Header extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid container-lg row mt-md-4 mx-auto gy-3 gy-md-0 justify-content-center">
+        <div className="container-fluid container-lg row mt-md-4 mx-auto gy-3 gy-md-0 justify-content-center justify-content-md-between">
           <div className="header-logo-parent col-8 col-md-3  align-self-center">
             <img
               src="./imgs/bakan-logo.png"
