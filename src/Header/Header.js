@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default class Header extends Component {
   constructor(props) {
     super(props);
+    console.log(this.props);
     this.state = {
       lang: "en",
       langDropDown: "fade-out",
@@ -102,7 +103,7 @@ export default class Header extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid container-lg row mt-md-4 mx-auto gy-3 gy-md-0 justify-content-center justify-content-md-between">
+        <div className="container-fluid container-lg row my-3 my-lg-4 mx-auto gy-3 gy-md-0 justify-content-center justify-content-md-between">
           <div className="header-logo-parent col-8 col-md-3  align-self-center">
             <img
               src="./imgs/bakan-logo.png"
@@ -137,13 +138,13 @@ export default class Header extends Component {
           </div>
           <div className="header-icons-parent d-flex justify-content-between align-items-center col-10 col-md-4 col-lg-3 align-self-center">
             <div className="position-relative nav-link">
-              <span class="header-shopping-cart-count-badge position-absolute border border-2 border-white border-white top-0 start-100 translate-middle badge rounded-pill ">
+              <span className="header-shopping-cart-count-badge position-absolute border border-2 border-white border-white top-0 start-100 translate-middle badge rounded-pill ">
                 5
               </span>
               <FontAwesomeIcon icon="fa-regular fa-heart" />
             </div>
             <div className="position-relative nav-link">
-              <span class="header-wishlist-count-badge position-absolute border border-2 border-white border-white top-0 start-100 translate-middle badge rounded-pill ">
+              <span className="header-wishlist-count-badge position-absolute border border-2 border-white border-white top-0 start-100 translate-middle badge rounded-pill ">
                 10
               </span>
               <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
@@ -161,6 +162,66 @@ export default class Header extends Component {
             </div>
           </div>
         </div>
+        <nav>
+          <div className="container-fluid container-lg d-flex justify-content-between align-items-center text-white h-100">
+            <div className="main-desktop-nav-parent d-flex align-items-center">
+              <div className="mobile-menu-humbugger fs-2 rounded-1 p-1 d-lg-none">
+                <FontAwesomeIcon icon="fa-solid fa-bars" />
+              </div>
+              <div className="shop-by-category-nav align-items-center ps-3 pe-5 fw-semibold d-none d-lg-flex">
+                <FontAwesomeIcon icon="fa-solid fa-bars" />
+                <p className="ps-3">SHOP BY CATEGORIES</p>
+              </div>
+              <div className="main-desktop-menu d-none d-lg-block">
+                <ul className="list-unstyled d-flex align-items-center">
+                  <li
+                    className="px-3 fw-semibold h-100"
+                    style={{ color: "var(--main-color)" }}
+                  >
+                    <a
+                      href="https://reactjs.org/"
+                      className="nav-link w-100 h-100 d-flex align-items-center"
+                    >
+                      HOME
+                    </a>
+                  </li>
+                  <li className="px-3 fw-semibold h-100">
+                    <a
+                      href="https://reactjs.org/"
+                      className="nav-link w-100 h-100 d-flex align-items-center"
+                    >
+                      SHOP <FontAwesomeIcon icon="fa-solid fa-angle-down" />
+                    </a>
+                  </li>
+                  <li className="px-3 fw-semibold h-100">
+                    <a
+                      href="https://reactjs.org/"
+                      className="nav-link w-100 h-100 d-flex align-items-center"
+                    >
+                      BLOG <FontAwesomeIcon icon="fa-solid fa-angle-down" />
+                    </a>
+                  </li>
+                  <li className="px-3 fw-semibold h-100">
+                    <a
+                      href="https://reactjs.org/"
+                      className="nav-link w-100 h-100 d-flex align-items-center"
+                    >
+                      PAGES <FontAwesomeIcon icon="fa-solid fa-angle-down" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="nav-right-text">
+              <a
+                href="https://reactjs.org/"
+                className="nav-link fw-semibold fs-7"
+              >
+                LIMITED TIME OFFER!
+              </a>
+            </div>
+          </div>
+        </nav>
       </header>
     );
   }

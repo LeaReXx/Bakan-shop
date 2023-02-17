@@ -1,67 +1,107 @@
 .on-header-menu {
-    font-size: 13px;
-    
+  font-size: 13px;
 }
 
 .change-language-icon {
-    width: 20px;
+  width: 20px;
 }
 
 .change-lang-drop-down .fa-chevron-down {
-    margin: 0 5px;
-    font-size: 13px;
-    justify-content: space-between;
+  margin: 0 5px;
+  font-size: 13px;
+  justify-content: space-between;
 }
 
 .header-logo-parent {
-    max-width: 250px;
+  max-width: 250px;
 }
-
 
 .header-search {
-    width: 90%;
-    height: 50px;
-    border: 2px solid var(--main-color);
-    overflow: hidden;
+  width: 90%;
+  height: 50px;
+  border: 2px solid var(--main-color);
+  overflow: hidden;
 }
 
-
 .header-search-submit-parent {
-    background-color: var(--main-color);
-    height: 100%;
-    vertical-align: middle;
-    cursor: pointer;
-    width: 25%;
-    min-width: 50px;
-    max-width: 75px;
+  background-color: var(--main-color);
+  height: 100%;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 25%;
+  min-width: 50px;
+  max-width: 75px;
 }
 
 .header-search .fa-magnifying-glass {
-    color: #fff;
-    display: block;
+  color: #fff;
+  display: block;
 }
 
 .header-search-input-parent {
-    width: 80%;
+  width: 80%;
 }
 .header-search-input-parent input::placeholder {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .header-search-input-parent input:focus,
 .header-search-category-parent select {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
-
 .header-icons-parent {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .header-shopping-cart-count-badge,
 .header-wishlist-count-badge {
-    font-size: 14px;
-    background-color: var(--main-color);
+  font-size: 14px;
+  background-color: var(--main-color);
 }
 
+nav {
+  background-color: var(--blue-color);
+  font-size: 15px;
+}
+
+nav > div {
+  min-height: 60px;
+}
+
+.mobile-menu-humbugger {
+  display: inline-flex;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.main-desktop-menu {
+  transition: all 0.5s;
+  
+}
+
+.main-desktop-menu ul {
+    height: 60px;
+}
+.main-desktop-menu .fa-angle-down {
+  font-size: 14px;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+
+.shop-by-category-nav {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  height: 60px;
+  transition: all 0.1s;
+}
+
+.shop-by-category-nav:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.shop-by-category-nav .fa-bars {
+  font-size: 20px;
+}

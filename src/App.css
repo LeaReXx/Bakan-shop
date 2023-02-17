@@ -1,5 +1,6 @@
 :root {
-    --main-color: rgb(255, 102, 0);
+  --main-color: #ff6600;
+  --blue-color: #2d416f;
 }
 
 * {
@@ -16,9 +17,13 @@
   visibility: visible;
 }
 
-p,span,ul,li,div {
-    padding: 0;
-    margin: 0;
+p,
+span,
+ul,
+li,
+div {
+  padding: 0;
+  margin: 0;
 }
 @keyframes fadeIn {
   from {
@@ -47,7 +52,6 @@ p,span,ul,li,div {
     opacity: 0;
   }
 }
-
 
 .nav-link {
   transition: all 0.1s;
