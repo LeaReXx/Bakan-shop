@@ -1,20 +1,25 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default class Header extends Component {
   constructor(props) {
     super(props);
-    console.log(this.props);
+    this.mobileMenu = createRef();
+    this.getMultiElem = createRef([]);
     this.state = {
       lang: "en",
       langDropDown: "fade-out",
     };
-
-    this.changeLanguage = this.changeLanguage.bind(this);
+    this.mobileMenuCloseOutSide = this.mobileMenuCloseOutSide.bind(this);
     this.changeLangDropHandler = this.changeLangDropHandler.bind(this);
   }
 
-  changeLanguage() {}
+  mobileMenuCloseOutSide(event) {
+    if (event.target !== event.currentTarget) {
+      return;
+    }
+    this.mobileMenu.current.classList.toggle("active");
+  }
 
   changeLangDropHandler() {
     this.state.langDropDown === "fade-out"
@@ -69,7 +74,7 @@ export default class Header extends Component {
                   <a
                     href="https://reactjs.org/"
                     value="en"
-                    onClick={this.changeLanguage}
+                    onClick={this.mobileMenuCloseOutSide}
                     className=" nav-link me-3"
                   >
                     <img
@@ -82,7 +87,7 @@ export default class Header extends Component {
                   <a
                     href="https://reactjs.org/"
                     value="ru"
-                    onClick={this.changeLanguage}
+                    onClick={this.mobileMenuCloseOutSide}
                     className=" nav-link me-3"
                   >
                     <img
@@ -165,7 +170,12 @@ export default class Header extends Component {
         <nav>
           <div className="container-fluid container-lg d-flex justify-content-between align-items-center text-white h-100">
             <div className="main-desktop-nav-parent d-flex align-items-center">
-              <div className="mobile-menu-humbugger fs-2 rounded-1 p-1 d-lg-none">
+              <div
+                className="mobile-menu-humbugger fs-2 rounded-1 p-1 d-lg-none"
+                onClick={() =>
+                  this.mobileMenu.current.classList.toggle("active")
+                }
+              >
                 <FontAwesomeIcon icon="fa-solid fa-bars" />
               </div>
               <div className="shop-by-category-nav align-items-center ps-3 pe-5 fw-semibold d-none d-lg-flex">
@@ -219,6 +229,24 @@ export default class Header extends Component {
               >
                 LIMITED TIME OFFER!
               </a>
+            </div>
+          </div>
+          <div
+            className="mobile-nav-parent position-fixed top-0 left-0 w-100 h-100 invisible"
+            ref={this.mobileMenu}
+            onClick={(event) => this.mobileMenuCloseOutSide(event)}
+          >
+            <div className="mobile-nav position-fixed top-0 left-0">
+              <div className="mobile-nav-close-btn-parent mx-auto my-2">
+                <button
+                  className="btn btn-outline-danger w-100"
+                  onClick={() =>
+                    this.mobileMenu.current.classList.toggle("active")
+                  }
+                >
+                  <FontAwesomeIcon icon="fa-solid fa-xmark" /> Close
+                </button>
+              </div>
             </div>
           </div>
         </nav>
