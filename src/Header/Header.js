@@ -12,12 +12,17 @@ export default class Header extends Component {
     };
     this.mobileMenuCloseOutSide = this.mobileMenuCloseOutSide.bind(this);
     this.changeLangDropHandler = this.changeLangDropHandler.bind(this);
+    this.mobileMenuToggle = this.mobileMenuToggle.bind(this);
   }
 
   mobileMenuCloseOutSide(event) {
     if (event.target !== event.currentTarget) {
       return;
     }
+    this.mobileMenuToggle();
+  }
+
+  mobileMenuToggle() {
     this.mobileMenu.current.classList.toggle("active");
   }
 
@@ -172,9 +177,7 @@ export default class Header extends Component {
             <div className="main-desktop-nav-parent d-flex align-items-center">
               <div
                 className="mobile-menu-humbugger fs-2 rounded-1 p-1 d-lg-none"
-                onClick={() =>
-                  this.mobileMenu.current.classList.toggle("active")
-                }
+                onClick={this.mobileMenuToggle}
               >
                 <FontAwesomeIcon icon="fa-solid fa-bars" />
               </div>
@@ -240,9 +243,7 @@ export default class Header extends Component {
               <div className="mobile-nav-close-btn-parent mx-auto my-2">
                 <button
                   className="btn btn-outline-danger w-100"
-                  onClick={() =>
-                    this.mobileMenu.current.classList.toggle("active")
-                  }
+                  onClick={this.mobileMenuToggle}
                 >
                   <FontAwesomeIcon icon="fa-solid fa-xmark" /> Close
                 </button>
