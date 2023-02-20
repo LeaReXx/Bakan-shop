@@ -1,12 +1,16 @@
-import React, { Component, createRef } from "react";
+import React, { createRef, PureComponent } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default class Navigation extends Component {
+export default class Navigation extends PureComponent {
   constructor(props) {
     super(props);
+    this.state = {
+      mobileMenuActiveCat: "menu",
+    };
     this.mobileMenu = createRef();
     this.mobileMenuCloseOutSide = this.mobileMenuCloseOutSide.bind(this);
     this.mobileMenuToggle = this.mobileMenuToggle.bind(this);
+    this.mobileMenuCatHandler = this.mobileMenuCatHandler.bind(this);
   }
 
   mobileMenuCloseOutSide(event) {
@@ -19,6 +23,11 @@ export default class Navigation extends Component {
   mobileMenuToggle() {
     this.mobileMenu.current.classList.toggle("active");
   }
+
+  mobileMenuCatHandler(event) {
+    this.setState({ mobileMenuActiveCat: event.target.dataset.catName });
+  }
+
   render() {
     return (
       <>
@@ -100,12 +109,27 @@ export default class Navigation extends Component {
               </div>
               <div>
                 <div className="border-1 border-top border-bottom px-2">
-                  <button className="btn text-muted w-50 text-start">
+                  <button
+                    className={`btn text-muted w-50 text-start ${
+                      this.state.mobileMenuActiveCat === "menu"
+                        ? "mobile-active-category"
+                        : ""
+                    }`}
+                    onClick={(event) => this.mobileMenuCatHandler(event)}
+                    data-cat-name="menu"
+                  >
                     <FontAwesomeIcon icon="fa-solid fa-bars" /> Menu
                   </button>
-                  <button className="btn text-muted w-50 text-start">
-                    <FontAwesomeIcon icon="fa-solid fa-list-ul" />
-                    Category
+                  <button
+                    className={`btn text-muted w-50 text-start ${
+                      this.state.mobileMenuActiveCat === "category"
+                        ? "mobile-active-category"
+                        : ""
+                    }`}
+                    onClick={(event) => this.mobileMenuCatHandler(event)}
+                    data-cat-name="category"
+                  >
+                    <FontAwesomeIcon icon="fa-solid fa-list-ul" /> Category
                   </button>
                 </div>
               </div>

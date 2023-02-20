@@ -131,7 +131,17 @@ nav > div {
   text-align: center;
 }
 
+.mobile-active-category {
+  opacity: 1 !important;
+  color: #000 !important;
+  transition: unset !important;
+}
+
 @media screen and (min-width: 992px) {
+  .mobile-nav-parent.active {
+    visibility: hidden !important;
+  }
+
   .mobile-nav-parent.active .mobile-nav {
     visibility: hidden;
     transform: translateX(-500px);
