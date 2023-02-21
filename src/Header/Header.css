@@ -137,6 +137,32 @@ nav > div {
   transition: unset !important;
 }
 
+.menu-list-items {
+  cursor: pointer;
+
+}
+
+.mobile-menu-item-parent-active {
+  display: block !important;
+}
+
+.tree-menu-child {
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.2s;
+  opacity: 0;
+}
+
+.mobile-menu-angle-tree.active > svg {
+  transition: all 0.2s;
+  transform: rotate(90deg);
+}
+.tree-menu-child.active {
+  overflow: visible;
+  opacity: 1;
+}
+
 @media screen and (min-width: 992px) {
   .mobile-nav-parent.active {
     visibility: hidden !important;
