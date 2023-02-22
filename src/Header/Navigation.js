@@ -6,12 +6,14 @@ export default class Navigation extends PureComponent {
     super(props);
     this.state = {
       mobileMenuActiveCat: "menu",
+      catHoverToggle: <FontAwesomeIcon icon="fa-solid fa-bars" />,
     };
     this.mobileMenu = createRef();
     this.mobileMenuCloseOutSide = this.mobileMenuCloseOutSide.bind(this);
     this.mobileMenuToggle = this.mobileMenuToggle.bind(this);
     this.mobileMenuCatHandler = this.mobileMenuCatHandler.bind(this);
     this.treeMenuHandler = this.treeMenuHandler.bind(this);
+    this.shopCategoryHoverToggle = this.shopCategoryHoverToggle.bind(this);
   }
 
   mobileMenuCloseOutSide(event) {
@@ -31,13 +33,22 @@ export default class Navigation extends PureComponent {
 
   treeMenuHandler(event) {
     let nextElem = event.currentTarget.nextElementSibling;
-    event.currentTarget.classList.toggle('active')
+    event.currentTarget.classList.toggle("active");
     nextElem.classList.toggle("active");
     nextElem.classList.contains("active")
       ? (nextElem.style.height = `${nextElem.scrollHeight}px`)
       : (nextElem.style.height = "0px");
   }
 
+  shopCategoryHoverToggle(event, isEntered) {
+    isEntered
+      ? this.setState({
+          catHoverToggle: <FontAwesomeIcon icon="fa-solid fa-xmark " />,
+        })
+      : this.setState({
+          catHoverToggle: <FontAwesomeIcon icon="fa-solid fa-bars" />,
+        });
+  }
   render() {
     return (
       <>
@@ -50,9 +61,94 @@ export default class Navigation extends PureComponent {
               >
                 <FontAwesomeIcon icon="fa-solid fa-bars" />
               </div>
-              <div className="shop-by-category-nav align-items-center ps-3 pe-5 fw-semibold d-none d-lg-flex">
-                <FontAwesomeIcon icon="fa-solid fa-bars" />
+              <div
+                className="shop-by-category-nav position-relative align-items-center ps-3 pe-5 fw-semibold d-none d-lg-flex"
+                onMouseEnter={(event) =>
+                  this.shopCategoryHoverToggle(event, true)
+                }
+                onMouseLeave={(event) =>
+                  this.shopCategoryHoverToggle(event, false)
+                }
+              >
+                <div className="fs-4">{this.state.catHoverToggle}</div>
                 <p className="ps-3">SHOP BY CATEGORIES</p>
+                <div className="shop-by-category-child position-absolute">
+                  <ul className="list-unstyled">
+                    <li className="py-2 text-muted border-bottom mx-3 h-100 fw-normal">
+                      <a
+                        href="https://reactjs.org/"
+                        className="nav-link w-100 h-100 d-flex align-items-center"
+                      >
+                        Activewear
+                      </a>
+                    </li>
+                    
+                    <li className="py-2 text-muted border-bottom mx-3 h-100 fw-normal">
+                      <a
+                        href="https://reactjs.org/"
+                        className="nav-link w-100 h-100 d-flex align-items-center"
+                      >
+                        Women Collections
+                      </a>
+                    </li>
+                    <li className="py-2 text-muted border-bottom mx-3 h-100 fw-normal">
+                      <a
+                        href="https://reactjs.org/"
+                        className="nav-link w-100 h-100 d-flex align-items-center"
+                      >
+                        Men Collections
+                      </a>
+                    </li>
+                    <li className="py-2 text-muted border-bottom mx-3 h-100 fw-normal">
+                      <a
+                        href="https://reactjs.org/"
+                        className="nav-link w-100 h-100 d-flex align-items-center"
+                      >
+                        Home & Electronics
+                      </a>
+                    </li>
+                    <li className="py-2 text-muted border-bottom mx-3 h-100 fw-normal">
+                      <a
+                        href="https://reactjs.org/"
+                        className="nav-link w-100 h-100 d-flex align-items-center"
+                      >
+                        Electronics
+                      </a>
+                    </li>
+                    <li className="py-2 text-muted border-bottom mx-3 h-100 fw-normal">
+                      <a
+                        href="https://reactjs.org/"
+                        className="nav-link w-100 h-100 d-flex align-items-center"
+                      >
+                        Headphones
+                      </a>
+                    </li>
+                    <li className="py-2 text-muted border-bottom mx-3 h-100 fw-normal">
+                      <a
+                        href="https://reactjs.org/"
+                        className="nav-link w-100 h-100 d-flex align-items-center"
+                      >
+                        Laptop & Tablet
+                      </a>
+                    </li>
+                    <li className="py-2 text-muted border-bottom mx-3 h-100 fw-normal">
+                      <a
+                        href="https://reactjs.org/"
+                        className="nav-link w-100 h-100 d-flex align-items-center"
+                      >
+                        Jeans & Trousers
+                      </a>
+                    </li>
+                    <li className="py-2 text-muted mx-3 h-100 fw-normal">
+                      <a
+                        href="https://reactjs.org/"
+                        className="nav-link w-100 h-100 d-flex align-items-center"
+                      >
+                        Furniture & Decor
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className="main-desktop-menu d-none d-lg-block">
                 <ul className="list-unstyled d-flex align-items-center">
@@ -272,12 +368,6 @@ export default class Navigation extends PureComponent {
                         className="nav-link w-75 fw-semibold"
                       >
                         Blog
-
-
-
-
-
-
                       </a>
                       <span
                         className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"

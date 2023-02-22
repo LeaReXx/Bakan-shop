@@ -91,7 +91,6 @@ nav > div {
 
 .shop-by-category-nav {
   background-color: rgba(255, 255, 255, 0.1);
-
   height: 60px;
   transition: all 0.1s;
 }
@@ -103,6 +102,30 @@ nav > div {
 
 .shop-by-category-nav .fa-bars {
   font-size: 20px;
+}
+
+
+.shop-by-category-child {
+  visibility: hidden;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 0 0 10px 10px;
+  transition: all 0.3s;
+  opacity: 0;
+  color: #000;
+}
+
+.shop-by-category-nav:hover .shop-by-category-child {
+  visibility: visible;
+  top: 60px;
+  opacity: 1;
+}
+
+.shop-by-category-nav > div:first-child {
+  min-width: 20px;
 }
 
 .mobile-nav-parent.active {
