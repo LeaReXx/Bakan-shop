@@ -104,7 +104,6 @@ nav > div {
   font-size: 20px;
 }
 
-
 .shop-by-category-child {
   visibility: hidden;
   width: 100%;
@@ -162,7 +161,6 @@ nav > div {
 
 .menu-list-items {
   cursor: pointer;
-
 }
 
 .mobile-menu-item-parent-active {
@@ -181,8 +179,29 @@ nav > div {
   transition: all 0.2s;
   transform: rotate(90deg);
 }
+
 .tree-menu-child.active {
   overflow: visible;
+  opacity: 1;
+}
+
+.main-desktop-menu > ul > li > div {
+  top: 60px;
+  left: 45%;
+  transform: translateX(-45%);
+  min-width: fit-content;
+  width: max-content;
+  transform: translateX(-50%);
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.2s;
+  opacity: 0;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  border-radius: 0 0 10px 10px;
+}
+
+.main-desktop-menu > ul > li:hover > div {
+  visibility: visible;
   opacity: 1;
 }
 

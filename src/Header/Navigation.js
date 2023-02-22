@@ -52,7 +52,7 @@ export default class Navigation extends PureComponent {
   render() {
     return (
       <>
-        <nav>
+        <nav className="position-relative">
           <div className="container-fluid container-lg d-flex justify-content-between align-items-center text-white h-100">
             <div className="main-desktop-nav-parent d-flex align-items-center">
               <div
@@ -82,7 +82,7 @@ export default class Navigation extends PureComponent {
                         Activewear
                       </a>
                     </li>
-                    
+
                     <li className="py-2 text-muted border-bottom mx-3 h-100 fw-normal">
                       <a
                         href="https://reactjs.org/"
@@ -170,6 +170,250 @@ export default class Navigation extends PureComponent {
                     >
                       SHOP <FontAwesomeIcon icon="fa-solid fa-angle-down" />
                     </a>
+                    <div className="position-absolute text-muted p-4 fw-normal">
+                      <div className="d-flex justify-content-between gap-5">
+                        <ul className="list-unstyled h-100">
+                          <a
+                            href="https://reactjs.org/"
+                            className="nav-link text-black pb-1 fw-semibold"
+                          >
+                            Shop Layouts
+                          </a>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Electronics
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Headphones
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Laptop
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Tablet
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Jeans
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Trousers
+                            </a>
+                          </li>
+                        </ul>
+                        <ul className="list-unstyled h-100">
+                          <a
+                            href="https://reactjs.org/"
+                            className="nav-link text-black pb-1 fw-semibold"
+                          >
+                            Products
+                          </a>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Women Collections
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Men Collections
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Electronics
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Laptop
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Trousers
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Furniture
+                            </a>
+                          </li>
+                        </ul>
+                        <ul className="list-unstyled h-100">
+                          <a
+                            href="https://reactjs.org/"
+                            className="nav-link text-black pb-1 fw-semibold"
+                          >
+                            Kitchen
+                          </a>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Activewear
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Electronics
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Headphones
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Tablet
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Jeans
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Decor
+                            </a>
+                          </li>
+                        </ul>
+                        <ul className="list-unstyled h-100">
+                          <a
+                            href="https://reactjs.org/"
+                            className="nav-link text-black pb-1 fw-semibold"
+                          >
+                            Home
+                          </a>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Activewear
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Electronics
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Headphones
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Tablet
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Jeans
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Decor
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="d-flex justify-content-center align-items-center m-auto mt-4 w-100 gap-3">
+                        <a href="https://reactjs.org/">
+                          <img
+                            src="./imgs/banner/banner-1.png"
+                            alt="Menu Banner"
+                            className="w-100"
+                          />
+                        </a>
+                        <a href="https://reactjs.org/">
+                          <img
+                            src="./imgs/banner/banner-2.png"
+                            alt="Menu Banner"
+                            className="w-100"
+                          />
+                        </a>
+                      </div>
+                    </div>
                   </li>
                   <li className="px-3 fw-semibold h-100">
                     <a
@@ -178,6 +422,234 @@ export default class Navigation extends PureComponent {
                     >
                       BLOG <FontAwesomeIcon icon="fa-solid fa-angle-down" />
                     </a>
+                    <div className="position-absolute text-muted p-4 fw-normal">
+                      <div className="d-flex justify-content-between gap-5">
+                        <ul className="list-unstyled h-100">
+                          <a
+                            href="https://reactjs.org/"
+                            className="nav-link text-black pb-1 fw-semibold"
+                          >
+                            Shop Layouts
+                          </a>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Electronics
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Headphones
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Laptop
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Tablet
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Jeans
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Trousers
+                            </a>
+                          </li>
+                        </ul>
+                        <ul className="list-unstyled h-100">
+                          <a
+                            href="https://reactjs.org/"
+                            className="nav-link text-black pb-1 fw-semibold"
+                          >
+                            Products
+                          </a>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Women Collections
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Men Collections
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Electronics
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Laptop
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Trousers
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Furniture
+                            </a>
+                          </li>
+                        </ul>
+                        <ul className="list-unstyled h-100">
+                          <a
+                            href="https://reactjs.org/"
+                            className="nav-link text-black pb-1 fw-semibold"
+                          >
+                            Kitchen
+                          </a>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Activewear
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Electronics
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Headphones
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Tablet
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Jeans
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Decor
+                            </a>
+                          </li>
+                        </ul>
+                        <ul className="list-unstyled h-100">
+                          <a
+                            href="https://reactjs.org/"
+                            className="nav-link text-black pb-1 fw-semibold"
+                          >
+                            Home
+                          </a>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Activewear
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Electronics
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Headphones
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Tablet
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Jeans
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Decor
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </li>
                   <li className="px-3 fw-semibold h-100">
                     <a
@@ -186,6 +658,110 @@ export default class Navigation extends PureComponent {
                     >
                       PAGES <FontAwesomeIcon icon="fa-solid fa-angle-down" />
                     </a>
+                    <div className="position-absolute text-muted p-4 fw-normal">
+                      <div className="d-flex justify-content-between gap-5">
+                        <ul className="list-unstyled h-100">
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Electronics
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Headphones
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Laptop
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Tablet
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Jeans
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Trousers
+                            </a>
+                          </li>
+                        </ul>
+                        <ul className="list-unstyled h-100">
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Electronics
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Headphones
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Laptop
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Tablet
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Jeans
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://reactjs.org/"
+                              className="nav-link pt-1"
+                            >
+                              Trousers
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
