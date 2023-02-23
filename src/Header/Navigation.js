@@ -789,7 +789,7 @@ export default class Navigation extends PureComponent {
                   <FontAwesomeIcon icon="fa-solid fa-xmark" /> Close
                 </button>
               </div>
-              <div className="pb-5 mb-5">
+              <div className="mt-3 pb-5 mb-5">
                 <div className="border-1 border-top border-bottom px-2">
                   <button
                     className={`btn text-muted w-50 text-start ${
@@ -814,663 +814,665 @@ export default class Navigation extends PureComponent {
                     <FontAwesomeIcon icon="fa-solid fa-list-ul" /> Category
                   </button>
                 </div>
-                <div
-                  className={`d-none ${
-                    this.state.mobileMenuActiveCat === "menu"
-                      ? "mobile-menu-item-parent-active"
-                      : ""
-                  }`}
-                >
-                  <ul>
-                    <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between w-100">
-                      <a
-                        href="https://reactjs.org/"
-                        className="nav-link w-75 fw-semibold"
-                      >
-                        Home
-                      </a>
-                      <span
-                        className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
-                        onClick={(event) => this.treeMenuHandler(event)}
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-angle-right" />
-                      </span>
-                      <div className="tree-menu-child">
-                        <ul>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 1
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 2
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 3
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 4
-                            </a>
-                          </li>
-                          <li className=" w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
-                      <a
-                        href="https://reactjs.org/"
-                        className="nav-link w-75 fw-semibold"
-                      >
-                        Shop
-                      </a>
-                      <span
-                        className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
-                        onClick={(event) => this.treeMenuHandler(event)}
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-angle-right" />
-                      </span>
-                      <div className="tree-menu-child">
-                        <ul>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 1
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 2
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 3
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 4
-                            </a>
-                          </li>
-                          <li className=" w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
-                      <a
-                        href="https://reactjs.org/"
-                        className="nav-link w-75 fw-semibold"
-                      >
-                        Blog
-                      </a>
-                      <span
-                        className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
-                        onClick={(event) => this.treeMenuHandler(event)}
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-angle-right" />
-                      </span>
-                      <div className="tree-menu-child">
-                        <ul>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 1
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 2
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 3
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 4
-                            </a>
-                          </li>
-                          <li className=" w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
-                      <a
-                        href="https://reactjs.org/"
-                        className="nav-link w-75 fw-semibold"
-                      >
-                        Pages
-                      </a>
-                      <span
-                        className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
-                        onClick={(event) => this.treeMenuHandler(event)}
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-angle-right" />
-                      </span>
-                      <div className="tree-menu-child">
-                        <ul>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 1
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 2
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 3
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 4
-                            </a>
-                          </li>
-                          <li className=" w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  className={`d-none ${
-                    this.state.mobileMenuActiveCat === "category"
-                      ? "mobile-menu-item-parent-active"
-                      : ""
-                  }`}
-                >
-                  <ul>
-                    <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between w-100">
-                      <a
-                        href="https://reactjs.org/"
-                        className="nav-link w-75 fw-semibold"
-                      >
-                        ashion &amp; Jewelry
-                      </a>
-                      <span
-                        className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
-                        onClick={(event) => this.treeMenuHandler(event)}
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-angle-right" />
-                      </span>
-                      <div className="tree-menu-child">
-                        <ul>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 1
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 2
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 3
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 4
-                            </a>
-                          </li>
-                          <li className=" w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
-                      <a
-                        href="https://reactjs.org/"
-                        className="nav-link w-75 fw-semibold"
-                      >
-                        Smartphones
-                      </a>
-                      <span
-                        className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
-                        onClick={(event) => this.treeMenuHandler(event)}
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-angle-right" />
-                      </span>
-                      <div className="tree-menu-child">
-                        <ul>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 1
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 2
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 3
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 4
-                            </a>
-                          </li>
-                          <li className=" w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
-                      <a
-                        href="https://reactjs.org/"
-                        className="nav-link w-75 fw-semibold"
-                      >
-                        Camera &amp; Photos
-                      </a>
-                      <span
-                        className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
-                        onClick={(event) => this.treeMenuHandler(event)}
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-angle-right" />
-                      </span>
-                      <div className="tree-menu-child">
-                        <ul>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 1
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 2
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 3
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 4
-                            </a>
-                          </li>
-                          <li className=" w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
-                      <a
-                        href="https://reactjs.org/"
-                        className="nav-link w-75 fw-semibold"
-                      >
-                        Home &amp; Electronics
-                      </a>
-                      <span
-                        className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
-                        onClick={(event) => this.treeMenuHandler(event)}
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-angle-right" />
-                      </span>
-                      <div className="tree-menu-child">
-                        <ul>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 1
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 2
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 3
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 4
-                            </a>
-                          </li>
-                          <li className=" w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
-                      <a
-                        href="https://reactjs.org/"
-                        className="nav-link w-75 fw-semibold"
-                      >
-                        Electronics
-                      </a>
-                      <span
-                        className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
-                        onClick={(event) => this.treeMenuHandler(event)}
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-angle-right" />
-                      </span>
-                      <div className="tree-menu-child">
-                        <ul>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 1
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 2
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 3
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 4
-                            </a>
-                          </li>
-                          <li className=" w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
-                      <a
-                        href="https://reactjs.org/"
-                        className="nav-link w-75 fw-semibold"
-                      >
-                        Headphones
-                      </a>
-                      <span
-                        className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
-                        onClick={(event) => this.treeMenuHandler(event)}
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-angle-right" />
-                      </span>
-                      <div className="tree-menu-child">
-                        <ul>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 1
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 2
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 3
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 4
-                            </a>
-                          </li>
-                          <li className=" w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
-                      <a
-                        href="https://reactjs.org/"
-                        className="nav-link w-75 fw-semibold"
-                      >
-                        Laptop &amp; Tablet
-                      </a>
-                      <span
-                        className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
-                        onClick={(event) => this.treeMenuHandler(event)}
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-angle-right" />
-                      </span>
-                      <div className="tree-menu-child">
-                        <ul>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 1
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 2
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 3
-                            </a>
-                          </li>
-                          <li className="border-bottom w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 4
-                            </a>
-                          </li>
-                          <li className=" w-100 d-block">
-                            <a
-                              href="https://reactjs.org/"
-                              className="nav-link p-2"
-                            >
-                              Home Page 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
+                <div className="mt-3">
+                  <div
+                    className={`d-none ${
+                      this.state.mobileMenuActiveCat === "menu"
+                        ? "mobile-menu-item-parent-active"
+                        : ""
+                    }`}
+                  >
+                    <ul>
+                      <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between w-100">
+                        <a
+                          href="https://reactjs.org/"
+                          className="nav-link w-75 fw-semibold"
+                        >
+                          Home
+                        </a>
+                        <span
+                          className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
+                          onClick={(event) => this.treeMenuHandler(event)}
+                        >
+                          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                        </span>
+                        <div className="tree-menu-child">
+                          <ul>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 1
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 2
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 3
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 4
+                              </a>
+                            </li>
+                            <li className=" w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 5
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
+                        <a
+                          href="https://reactjs.org/"
+                          className="nav-link w-75 fw-semibold"
+                        >
+                          Shop
+                        </a>
+                        <span
+                          className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
+                          onClick={(event) => this.treeMenuHandler(event)}
+                        >
+                          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                        </span>
+                        <div className="tree-menu-child">
+                          <ul>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 1
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 2
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 3
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 4
+                              </a>
+                            </li>
+                            <li className=" w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 5
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
+                        <a
+                          href="https://reactjs.org/"
+                          className="nav-link w-75 fw-semibold"
+                        >
+                          Blog
+                        </a>
+                        <span
+                          className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
+                          onClick={(event) => this.treeMenuHandler(event)}
+                        >
+                          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                        </span>
+                        <div className="tree-menu-child">
+                          <ul>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 1
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 2
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 3
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 4
+                              </a>
+                            </li>
+                            <li className=" w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 5
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
+                        <a
+                          href="https://reactjs.org/"
+                          className="nav-link w-75 fw-semibold"
+                        >
+                          Pages
+                        </a>
+                        <span
+                          className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
+                          onClick={(event) => this.treeMenuHandler(event)}
+                        >
+                          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                        </span>
+                        <div className="tree-menu-child">
+                          <ul>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 1
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 2
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 3
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 4
+                              </a>
+                            </li>
+                            <li className=" w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 5
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    className={`d-none ${
+                      this.state.mobileMenuActiveCat === "category"
+                        ? "mobile-menu-item-parent-active"
+                        : ""
+                    }`}
+                  >
+                    <ul>
+                      <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between w-100">
+                        <a
+                          href="https://reactjs.org/"
+                          className="nav-link w-75 fw-semibold"
+                        >
+                          ashion &amp; Jewelry
+                        </a>
+                        <span
+                          className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
+                          onClick={(event) => this.treeMenuHandler(event)}
+                        >
+                          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                        </span>
+                        <div className="tree-menu-child">
+                          <ul>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 1
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 2
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 3
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 4
+                              </a>
+                            </li>
+                            <li className=" w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 5
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
+                        <a
+                          href="https://reactjs.org/"
+                          className="nav-link w-75 fw-semibold"
+                        >
+                          Smartphones
+                        </a>
+                        <span
+                          className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
+                          onClick={(event) => this.treeMenuHandler(event)}
+                        >
+                          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                        </span>
+                        <div className="tree-menu-child">
+                          <ul>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 1
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 2
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 3
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 4
+                              </a>
+                            </li>
+                            <li className=" w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 5
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
+                        <a
+                          href="https://reactjs.org/"
+                          className="nav-link w-75 fw-semibold"
+                        >
+                          Camera &amp; Photos
+                        </a>
+                        <span
+                          className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
+                          onClick={(event) => this.treeMenuHandler(event)}
+                        >
+                          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                        </span>
+                        <div className="tree-menu-child">
+                          <ul>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 1
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 2
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 3
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 4
+                              </a>
+                            </li>
+                            <li className=" w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 5
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
+                        <a
+                          href="https://reactjs.org/"
+                          className="nav-link w-75 fw-semibold"
+                        >
+                          Home &amp; Electronics
+                        </a>
+                        <span
+                          className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
+                          onClick={(event) => this.treeMenuHandler(event)}
+                        >
+                          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                        </span>
+                        <div className="tree-menu-child">
+                          <ul>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 1
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 2
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 3
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 4
+                              </a>
+                            </li>
+                            <li className=" w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 5
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
+                        <a
+                          href="https://reactjs.org/"
+                          className="nav-link w-75 fw-semibold"
+                        >
+                          Electronics
+                        </a>
+                        <span
+                          className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
+                          onClick={(event) => this.treeMenuHandler(event)}
+                        >
+                          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                        </span>
+                        <div className="tree-menu-child">
+                          <ul>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 1
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 2
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 3
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 4
+                              </a>
+                            </li>
+                            <li className=" w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 5
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
+                        <a
+                          href="https://reactjs.org/"
+                          className="nav-link w-75 fw-semibold"
+                        >
+                          Headphones
+                        </a>
+                        <span
+                          className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
+                          onClick={(event) => this.treeMenuHandler(event)}
+                        >
+                          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                        </span>
+                        <div className="tree-menu-child">
+                          <ul>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 1
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 2
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 3
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 4
+                              </a>
+                            </li>
+                            <li className=" w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 5
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li className="menu-list-items p-2 border-bottom d-flex flex-wrap justify-content-between">
+                        <a
+                          href="https://reactjs.org/"
+                          className="nav-link w-75 fw-semibold"
+                        >
+                          Laptop &amp; Tablet
+                        </a>
+                        <span
+                          className="mobile-menu-angle-tree px-2 w-25 text-end nav-link"
+                          onClick={(event) => this.treeMenuHandler(event)}
+                        >
+                          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                        </span>
+                        <div className="tree-menu-child">
+                          <ul>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 1
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 2
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 3
+                              </a>
+                            </li>
+                            <li className="border-bottom w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 4
+                              </a>
+                            </li>
+                            <li className=" w-100 d-block">
+                              <a
+                                href="https://reactjs.org/"
+                                className="nav-link p-2"
+                              >
+                                Home Page 5
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
