@@ -789,7 +789,7 @@ export default class Navigation extends PureComponent {
                   <FontAwesomeIcon icon="fa-solid fa-xmark" /> Close
                 </button>
               </div>
-              <div>
+              <div className="pb-5 mb-5">
                 <div className="border-1 border-top border-bottom px-2">
                   <button
                     className={`btn text-muted w-50 text-start ${
