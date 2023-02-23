@@ -127,6 +127,10 @@ nav > div {
   min-width: 20px;
 }
 
+.mobile-nav-parent {
+  z-index: 10;
+}
+
 .mobile-nav-parent.active {
   visibility: visible !important;
   background-color: hsl(0deg 0% 0% / 60%);
