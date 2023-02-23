@@ -129,7 +129,7 @@ nav > div {
 
 .mobile-nav-parent.active {
   visibility: visible !important;
-  background-color: hwb(0 0% 100% / 0.6);
+  background-color: hsl(0deg 0% 0% / 60%);
   transition: all 0.1s;
 }
 
