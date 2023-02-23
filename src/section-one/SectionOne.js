@@ -29,17 +29,17 @@ export default class SectionOne extends Component {
           >
             <SwiperSlide className="section-one-swiper-items">
               <a href="https://reactjs.org/">
-                <img src="./imgs/section-one/slider1.jpg" alt="Swiper Image" />
+                <img src="./imgs/section-one/slider1.jpg" alt="Swiper Slider" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="section-one-swiper-items">
               <a href="https://reactjs.org/">
-                <img src="./imgs/section-one/slide2.jpg" alt="Swiper Image" />
+                <img src="./imgs/section-one/slide2.jpg" alt="Swiper Slider" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="section-one-swiper-items">
               <a href="https://reactjs.org/">
-                <img src="./imgs/section-one/slide3.jpg" alt="Swiper Image" />
+                <img src="./imgs/section-one/slide3.jpg" alt="Swiper Slider" />
               </a>
             </SwiperSlide>
           </Swiper>
