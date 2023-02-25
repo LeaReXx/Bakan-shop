@@ -44,6 +44,22 @@ export default class SectionOne extends Component {
             </SwiperSlide>
           </Swiper>
         </div>
+        <div className="section-one-banner-parent my-4 d-flex flex-wrap align-items-center justify-content-between w-100 mx-auto gap-3">
+          <a href="">
+            <img
+              src="./imgs/banner/banner-1.png"
+              alt="Section one banner"
+              className="w-100 mx-auto"
+            />
+          </a>
+          <a href="">
+            <img
+              src="./imgs/banner/banner-2.png"
+              alt="Section one banner"
+              className="w-100 mx-auto"
+            />
+          </a>
+        </div>
       </section>
     );
   }
