@@ -47,3 +47,22 @@
 .section-one-banner-parent img {
   max-width: 400px;
 }
+
+.section-one-offer-items-parent {
+  width: 100% !important;
+  display: inline-block !important;
+}
+
+.section-one-offer-items-parent img {
+  width: 100%;
+  max-width: 250px;
+  max-height: 350px;
+}
+
+.section-one-offer-timer-parent {
+  background-color: var(--blue-color);
+}
+
+.section-one-offer-text-parent {
+  background-color: var(--blue-dark-color);
+}

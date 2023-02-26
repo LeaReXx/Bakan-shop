@@ -1,6 +1,7 @@
 :root {
   --main-color: #ff6600;
   --blue-color: #2d416f;
+  --blue-dark-color: #26375e;
 }
 
 * {
@@ -10,7 +11,9 @@
   font-family: "roboto", Arial, Helvetica, sans-serif;
   direction: ltr;
 }
-
+body {
+  background-color: #f5f5f5;
+}
 .fade-in {
   position: absolute;
   animation: fadeIn 0.2s linear;
