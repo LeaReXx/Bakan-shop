@@ -54,7 +54,6 @@
 }
 
 .section-one-offer-items-parent img {
-  width: 100%;
   max-width: 250px;
   max-height: 350px;
 }
@@ -65,4 +64,47 @@
 
 .section-one-offer-text-parent {
   background-color: var(--blue-dark-color);
+}
+
+@media screen and (min-width: 768px) {
+  .section-one-offer-items-parent img {
+    max-width: 150px;
+    max-height: 200px;
+  }
+  .section-one-banners-parent {
+    width: 65%;
+  }
+  .section-one-offer-parent {
+    width: 33%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-one-offer-items-parent img {
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-one-offer-items-parent img {
+    max-width: 300px;
+    height: 300px;
+    max-height: unset;
+  }
+
+  .section-one-banners-parent {
+    width: 65%;
+  }
+  .section-one-offer-parent {
+    width: 33%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .section-one-offer-items-parent img {
+    margin: 3rem auto;
+  }
+
 }

@@ -106,6 +106,7 @@ nav > div {
 
 .shop-by-category-child {
   visibility: hidden;
+  z-index: 5;
   width: 100%;
   left: 0;
   top: 0;

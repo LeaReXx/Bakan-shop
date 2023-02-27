@@ -170,7 +170,7 @@ export default class Navigation extends PureComponent {
                     >
                       SHOP <FontAwesomeIcon icon="fa-solid fa-angle-down" />
                     </a>
-                    <div className="position-absolute text-muted p-4 fw-normal">
+                    <div className="highIndex position-absolute text-muted p-4 fw-normal">
                       <div className="d-flex justify-content-between gap-5">
                         <ul className="list-unstyled h-100">
                           <a
@@ -422,7 +422,7 @@ export default class Navigation extends PureComponent {
                     >
                       BLOG <FontAwesomeIcon icon="fa-solid fa-angle-down" />
                     </a>
-                    <div className="position-absolute text-muted p-4 fw-normal">
+                    <div className="highIndex position-absolute text-muted p-4 fw-normal">
                       <div className="d-flex justify-content-between gap-5">
                         <ul className="list-unstyled h-100">
                           <a
@@ -658,7 +658,7 @@ export default class Navigation extends PureComponent {
                     >
                       PAGES <FontAwesomeIcon icon="fa-solid fa-angle-down" />
                     </a>
-                    <div className="position-absolute text-muted p-4 fw-normal">
+                    <div className="highIndex position-absolute text-muted p-4 fw-normal">
                       <div className="d-flex justify-content-between gap-5">
                         <ul className="list-unstyled h-100">
                           <li>
