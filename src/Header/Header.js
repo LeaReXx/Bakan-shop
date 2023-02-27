@@ -21,7 +21,7 @@ export default class Header extends Component {
     return (
       <header className="bg-white">
         <div className="border-bottom">
-          <div className="on-header-menu container-fluid container-lg text-muted d-md-flex justify-content-between text-center my-1 py-2 align-items-center">
+          <div className="on-header-menu container-fluid container-lg text-muted d-md-flex justify-content-between text-center py-2 align-items-center">
             <div>
               <p>Hello Customer, welcome to Bakan Market!</p>
             </div>
