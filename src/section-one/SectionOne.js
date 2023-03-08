@@ -410,7 +410,7 @@ export default class SectionOne extends Component {
                 return (
                   <SwiperSlide
                     key={item.id}
-                    className="section-one-offer-items-parent w-100 bg-white rounded-3 position-rela tive"
+                    className="section-one-offer-items-parent w-100 bg-white rounded-3 position-relative"
                   >
                     <span className="bg-danger text-white position-absolute top-0 left-0 m-3 px-2 fs-6 rounded-3">
                       Sale
@@ -457,7 +457,12 @@ export default class SectionOne extends Component {
                         <button className="btn rounded-1">
                           <FontAwesomeIcon icon="fa-regular fa-heart" />
                         </button>
-                        <button className="btn rounded-1 w-100 ">
+                        <button
+                          className="btn rounded-1 w-100"
+                          onClick={() =>
+                            this.props.onCheckProductBeforeAdd({ ...item, count: 1 })
+                          }
+                        >
                           ADD TO CART
                         </button>
                         <button className="btn rounded-1">

@@ -16,7 +16,6 @@ export default class Header extends Component {
       ? this.setState({ langDropDown: "fade-in" })
       : this.setState({ langDropDown: "fade-out" });
   }
-
   render() {
     return (
       <header className="bg-white">
@@ -52,7 +51,7 @@ export default class Header extends Component {
                 >
                   <img
                     src="./imgs/flags/us-flag.png"
-                    alt=""
+                    alt="Lang Flag Icon"
                     className="change-language-icon mx-1"
                   />
                   English
@@ -69,7 +68,7 @@ export default class Header extends Component {
                   >
                     <img
                       src="./imgs/flags/us-flag.png"
-                      alt=""
+                      alt="Lang Flag Icon"
                       className="change-language-icon mx-1"
                     />
                     English
@@ -82,7 +81,7 @@ export default class Header extends Component {
                   >
                     <img
                       src="./imgs/flags/ru-flag.png"
-                      alt=""
+                      alt="Lang Flag Icon"
                       className="change-language-icon mx-1"
                     />
                     Russian
@@ -133,16 +132,96 @@ export default class Header extends Component {
           </div>
           <div className="header-icons-parent d-flex justify-content-between align-items-center col-10 col-md-4 col-lg-3 align-self-center">
             <div className="position-relative nav-link">
-              <span className="header-shopping-cart-count-badge position-absolute border border-2 border-white border-white top-0 start-100 translate-middle badge rounded-pill ">
+              <span className="header-shopping-cart-count-badge position-absolute border border-2  border-white top-0 start-100 translate-middle badge rounded-pill ">
                 5
               </span>
               <FontAwesomeIcon icon="fa-regular fa-heart" />
             </div>
-            <div className="position-relative nav-link">
-              <span className="header-wishlist-count-badge position-absolute border border-2 border-white border-white top-0 start-100 translate-middle badge rounded-pill ">
-                10
+            <div className="header-shopping-cart-parent position-relative nav-link">
+              <span className="header-wishlist-count-badge position-absolute border border-2  border-white top-0 start-100 translate-middle badge rounded-pill ">
+                {this.props.userShoppingCartCount}
               </span>
               <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
+              <div className="cursor-unset position-absolute  bg-white rounded-3">
+                <h3 className="fs-5 fw-semibold p-3 border-1 border-bottom">
+                  Shopping Cart
+                </h3>
+                <div className="shopping-cart-items-parent fs-6">
+                  {this.props.userShoppingCart.length ? (
+                    this.props.userShoppingCart.map((item) => {
+                      return (
+                        <div key={item.id}>
+                          <div className="shopping-cart-item d-flex px-3 py-1 gap-3">
+                            <div>
+                              <img
+                                src={item.image}
+                                alt="Shopping Cart Item img"
+                                className="w-100"
+                              />
+                            </div>
+                            <div>
+                              <strong className="fw-normal fs-6">
+                                {item.title}
+                              </strong>
+                              <div className="w-100 d-inline-flex justify-content-between align-items-center my-2">
+                                <div>
+                                  <p className="text-danger fs-6 text-black">
+                                    {item.count} x $
+                                    {item?.priceInOffer || item.price}
+                                  </p>
+                                </div>
+                                <div>
+                                  <button
+                                    className="btn btn-outline-danger"
+                                    onClick={() =>
+                                      this.props.shoppingCartDeleteItem(item.id)
+                                    }
+                                  >
+                                    <FontAwesomeIcon icon="fa-regular fa-trash-can" />
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })
+                  ) : (
+                    <p className="text-center my-2">No products in the cart.</p>
+                  )}
+                </div>
+                {this.props.userShoppingCart.length > 0 && (
+                  <div className="border-muted border-top fs-6 p-2">
+                    <div>
+                      <div className="d-flex justify-content-between align-items-center">
+                        <p className="fw-semibold my-1">
+                          <FontAwesomeIcon
+                            icon="fa-solid fa-truck-fast"
+                            className="fa-fw text-muted fs-5"
+                          />
+                          Transport cost:
+                        </p>
+                        <span className="text-success fs-5 fw-semibold">
+                          {this.props.userTotalPrice > 20 ? "Free" : "$10"}
+                        </span>
+                      </div>
+
+                      <div className="d-flex justify-content-between align-items-center">
+                        <p className="fw-semibold my-1">
+                          <FontAwesomeIcon
+                            icon="fa-solid fa-file-invoice-dollar"
+                            className="fa-fw text-muted fs-5"
+                          />
+                          Total price:
+                        </p>
+                        <span className="primary-color fs-5 fw-semibold">
+                          ${this.props.userTotalPrice}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
             <div className="position-relative d-flex align-items-center">
               <FontAwesomeIcon icon="fa-regular fa-user" />

@@ -210,6 +210,34 @@ nav > div {
   opacity: 1;
 }
 
+.header-shopping-cart-parent > div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  min-width: 280px;
+  width: 320px;
+  left: -50%;
+  transform: translateX(-30%);
+  top: 50px;
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+  z-index: 5;
+}
+
+.header-shopping-cart-parent:hover > div {
+  visibility: visible;
+  opacity: 1;
+  color: #000;
+  top: 40px;
+}
+
+.shopping-cart-items-parent {
+  min-height: 30px;
+  max-height: 350px;
+  overflow: auto;
+}
+.shopping-cart-item > div:first-child {
+  max-width: 60px;
+}
 @media screen and (min-width: 992px) {
   .mobile-nav-parent.active {
     visibility: hidden !important;
