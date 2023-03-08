@@ -238,7 +238,7 @@ export default class SectionOne extends Component {
         {
           id: 1,
           title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-          price: 109.95,
+          price: 30.95,
           description:
             "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
           category: "men's clothing",
@@ -447,9 +447,9 @@ export default class SectionOne extends Component {
                       </div>
                       <div className="my-2">
                         <h3 className="text-danger">
-                          {item.priceInOffer}
-                          <sub className="text-decoration-line-through text-muted fw-normal">
-                            {item.price}
+                          ${item.priceInOffer}
+                          <sub className="text-decoration-line-through text-muted fw-normal px-1">
+                            ${item.price}
                           </sub>
                         </h3>
                       </div>
@@ -460,7 +460,10 @@ export default class SectionOne extends Component {
                         <button
                           className="btn rounded-1 w-100"
                           onClick={() =>
-                            this.props.onCheckProductBeforeAdd({ ...item, count: 1 })
+                            this.props.onCheckProductBeforeAdd({
+                              ...item,
+                              count: 1,
+                            })
                           }
                         >
                           ADD TO CART
