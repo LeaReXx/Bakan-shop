@@ -9,6 +9,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import Header from "./Header/Header";
 import SectionOne from "./section-one/SectionOne";
+import SectionTwo from "./section-two/SectionTwo";
 library.add(fas, far);
 
 export default class App extends Component {
@@ -97,7 +98,7 @@ export default class App extends Component {
     );
     shoppingCart.splice(indexProductInCart, 1);
     this.setState({ userShoppingCart: shoppingCart });
-    this.calcUserProductPrice()
+    this.calcUserProductPrice();
   }
   render() {
     return (
@@ -115,6 +116,7 @@ export default class App extends Component {
             this.checkProductBeforeAdd(product);
           }}
         />
+        <SectionTwo />
       </div>
     );
   }

@@ -1,0 +1,11 @@
+.section-two-items-parent > div span {
+  font-size: 14px;
+}
+
+.section-two-items-parent > div {
+    transition: all 0.5s;
+}
+
+.section-two-items-parent > div:hover {
+    transform: translateY(-10px);
+}
