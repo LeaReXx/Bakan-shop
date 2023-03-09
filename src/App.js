@@ -10,6 +10,7 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import Header from "./Header/Header";
 import SectionOne from "./section-one/SectionOne";
 import SectionTwo from "./section-two/SectionTwo";
+import SectionThree from "./section-three/SectionThree";
 library.add(fas, far);
 
 export default class App extends Component {
@@ -117,6 +118,11 @@ export default class App extends Component {
           }}
         />
         <SectionTwo />
+        <SectionThree
+          onCheckProductBeforeAdd={(product) => {
+            this.checkProductBeforeAdd(product);
+          }}
+        />
       </div>
     );
   }

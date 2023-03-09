@@ -90,3 +90,19 @@ div {
 .toast-add-to-cart-notif > div:first-child {
   min-width: 80px;
 }
+
+.product-absolute {
+  width: 100%;
+  left: 0;
+  bottom: -30px;
+}
+
+@media screen and (min-width: 992px) {
+  .product-absolute {
+    visibility: hidden;
+    transition: all 0.2s;
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+}
