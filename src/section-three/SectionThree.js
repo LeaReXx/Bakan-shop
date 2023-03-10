@@ -110,9 +110,9 @@ export default class SectionThree extends Component {
               1200: {
                 slidesPerView: 4,
                 spaceBetween: 20,
+                speed:1500,
               },
             }}
-            loop={true}
             navigation={true}
             modules={[Navigation]}
             className="section-three-swiper rounded-4 pb-5"
