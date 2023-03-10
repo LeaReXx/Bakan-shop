@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import "./BrandSection.css";
+import "./SectionFour.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";

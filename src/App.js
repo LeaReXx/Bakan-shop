@@ -11,7 +11,7 @@ import Header from "./Header/Header";
 import SectionOne from "./section-one/SectionOne";
 import SectionTwo from "./section-two/SectionTwo";
 import SectionThree from "./section-three/SectionThree";
-import BrandSection from "./brand-section/BrandSection";
+import SectionFour from "./section-four/SectionFour";
 library.add(fas, far);
 
 export default class App extends Component {
@@ -124,7 +124,7 @@ export default class App extends Component {
             this.checkProductBeforeAdd(product);
           }}
         />
-        <BrandSection />
+        <SectionFour />
       </div>
     );
   }
