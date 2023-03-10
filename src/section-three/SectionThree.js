@@ -119,7 +119,7 @@ export default class SectionThree extends Component {
           >
             {this.products.map((product) => (
               <SwiperSlide key={product.id}>
-                <div className="best-selling-product-item bg-white p-2 ">
+                <div className="product-item-box bg-white p-2 ">
                   <div className="text-center py-4 nav-link">
                     <img src={product.image} alt={product.title} />
                   </div>

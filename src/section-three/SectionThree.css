@@ -2,36 +2,10 @@
   background-color: var(--blue-color);
 }
 
-.best-selling-product-item {
-  border-radius: 1rem 1rem 0 0;
-}
 
-.best-selling-product-item > div:nth-child(1) img {
-  width: 200px;
-  height: 230px;
-}
-
-.best-selling-product-item strong {
-  font-size: 14px !important;
-}
 
 .section-three .swiper-button-prev::after,
 .section-three .swiper-button-next::after {
   visibility: visible;
 }
 
-@media screen and (min-width: 992px) {
-  .best-selling-product-item {
-    border-radius: 1rem;
-    transition: all 0.3s;
-  }
-
-  .best-selling-product-item:hover {
-    border-radius: 1rem 1rem 0 0;
-  }
-  .best-selling-product-item:hover .product-absolute {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
