@@ -11,6 +11,7 @@ import Header from "./Header/Header";
 import SectionOne from "./section-one/SectionOne";
 import SectionTwo from "./section-two/SectionTwo";
 import SectionThree from "./section-three/SectionThree";
+import BrandSection from "./brand-section/BrandSection";
 library.add(fas, far);
 
 export default class App extends Component {
@@ -55,7 +56,7 @@ export default class App extends Component {
         </p>
         <div className="toast-add-to-cart-notif d-flex gap-3">
           <div className="w-25">
-            <img src={newProduct.image} className="w-100" />
+            <img src={newProduct.image} className="w-100" alt={newProduct.title} />
           </div>
           <div>
             <strong className="fw-normal fs-6">{newProduct.title}</strong>
@@ -123,6 +124,7 @@ export default class App extends Component {
             this.checkProductBeforeAdd(product);
           }}
         />
+        <BrandSection />
       </div>
     );
   }
