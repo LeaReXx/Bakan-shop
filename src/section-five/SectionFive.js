@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./SectionFive.css";
 import ReactStars from "react-stars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Countdown from "react-countdown";
 
 export default class SectionFive extends Component {
   constructor(props) {
@@ -235,6 +234,7 @@ export default class SectionFive extends Component {
           </div>
           <div className="row g-4">
             {this.RecommendProducts.map((product) => {
+              // console.log(!!product.priceInOffer);
               return (
                 <div
                   className="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl"
@@ -260,7 +260,20 @@ export default class SectionFive extends Component {
                         />
                       </div>
                       <div className="pb-3 position-relative highIndex">
-                        <p className="fs-5 fw-semibold">${product.price}</p>
+                        {!!product.priceInOffer ? (
+                          <>
+                            <p className="fs-5 fw-semibold d-inline text-danger">
+                              ${product.priceInOffer}
+                            </p>
+                            <sub className="text-decoration-line-through ps-1 fs-6">
+                              {product.price}
+                            </sub>
+                          </>
+                        ) : (
+                          <>
+                            <p className="fs-5 fw-semibold">${product.price}</p>
+                          </>
+                        )}
                       </div>
                       <div className="product-btns-parent product-btn-hover rounded-4 bg-white d-flex gap-1 px-2 pt-3 pb-2">
                         <button className="btn rounded-1">
