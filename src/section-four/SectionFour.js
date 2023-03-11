@@ -47,7 +47,7 @@ export default class SectionFour extends PureComponent {
   }
   render() {
     return (
-      <section className="container-fluid py-5">
+      <section className="container-fluid container-lg py-5">
         <div className="text-center mb-4">
           <h2>Shop By Brands</h2>
         </div>
@@ -71,12 +71,16 @@ export default class SectionFour extends PureComponent {
               slidesPerView: 5,
               spaceBetween: 20,
             },
+            1400: {
+              slidesPerView: 6,
+              spaceBetween: 20,
+            },
           }}
           navigation={true}
           speed={600}
           autoplay={{
             delay: 1500,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
           }}
           modules={[Navigation, Autoplay]}
           className="section-brand-swiper mySwiper"
