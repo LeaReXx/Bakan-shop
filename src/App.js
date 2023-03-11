@@ -13,6 +13,7 @@ import SectionTwo from "./section-two/SectionTwo";
 import SectionThree from "./section-three/SectionThree";
 import SectionFour from "./section-four/SectionFour";
 import SectionFive from "./section-five/SectionFive";
+import SectionSix from "./section-six/SectionSix";
 library.add(fas, far);
 
 export default class App extends Component {
@@ -135,6 +136,8 @@ export default class App extends Component {
             this.checkProductBeforeAdd(product);
           }}
         />
+
+        <SectionSix />
       </div>
     );
   }
