@@ -4,17 +4,45 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-export default class BrandSection extends PureComponent {
+export default class SectionFour extends PureComponent {
   constructor(props) {
     super(props);
     this.brands = [
-      { img: "./imgs/brand-section/b1.jpg", url: "https://reactjs.org/" },
-      { img: "./imgs/brand-section/b2.jpg", url: "https://reactjs.org/" },
-      { img: "./imgs/brand-section/b3.jpg", url: "https://reactjs.org/" },
-      { img: "./imgs/brand-section/b4.jpg", url: "https://reactjs.org/" },
-      { img: "./imgs/brand-section/b5.jpg", url: "https://reactjs.org/" },
-      { img: "./imgs/brand-section/b6.jpg", url: "https://reactjs.org/" },
-      { img: "./imgs/brand-section/b7.jpg", url: "https://reactjs.org/" },
+      {
+        id: 1,
+        img: "./imgs/brand-section/b1.jpg",
+        url: "https://reactjs.org/",
+      },
+      {
+        id: 2,
+        img: "./imgs/brand-section/b2.jpg",
+        url: "https://reactjs.org/",
+      },
+      {
+        id: 3,
+        img: "./imgs/brand-section/b3.jpg",
+        url: "https://reactjs.org/",
+      },
+      {
+        id: 4,
+        img: "./imgs/brand-section/b4.jpg",
+        url: "https://reactjs.org/",
+      },
+      {
+        id: 5,
+        img: "./imgs/brand-section/b5.jpg",
+        url: "https://reactjs.org/",
+      },
+      {
+        id: 6,
+        img: "./imgs/brand-section/b6.jpg",
+        url: "https://reactjs.org/",
+      },
+      {
+        id: 7,
+        img: "./imgs/brand-section/b7.jpg",
+        url: "https://reactjs.org/",
+      },
     ];
   }
   render() {
@@ -54,7 +82,7 @@ export default class BrandSection extends PureComponent {
           className="section-brand-swiper mySwiper"
         >
           {this.brands.map((brand) => (
-            <SwiperSlide>
+            <SwiperSlide key={brand.id}>
               <div className="rounded-5 overflow-hidden text-center">
                 <img src={brand.img} alt="" className="rounded-5" />
               </div>
