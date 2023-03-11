@@ -110,7 +110,7 @@ export default class SectionThree extends Component {
               1200: {
                 slidesPerView: 4,
                 spaceBetween: 20,
-                speed:1500,
+                speed: 1500,
               },
             }}
             navigation={true}
@@ -136,10 +136,10 @@ export default class SectionThree extends Component {
                         value={product.rating.rate}
                       />
                     </div>
-                    <div className="pb-3">
+                    <div className="pb-3 position-relative highIndex ">
                       <p className="fs-5 fw-semibold">${product.price}</p>
                     </div>
-                    <div className="product-btns-parent product-absolute position-absolute rounded-4 bg-white d-flex gap-1 p-2">
+                    <div className="product-btns-parent product-btn-hover rounded-4 bg-white d-flex gap-1 px-2 pt-3 pb-2">
                       <button className="btn rounded-1">
                         <FontAwesomeIcon icon="fa-regular fa-heart" />
                       </button>

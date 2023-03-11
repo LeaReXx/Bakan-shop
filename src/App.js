@@ -12,7 +12,7 @@ import SectionOne from "./section-one/SectionOne";
 import SectionTwo from "./section-two/SectionTwo";
 import SectionThree from "./section-three/SectionThree";
 import SectionFour from "./section-four/SectionFour";
-import SectionFive from './section-five/SectionFive'
+import SectionFive from "./section-five/SectionFive";
 library.add(fas, far);
 
 export default class App extends Component {
@@ -130,7 +130,11 @@ export default class App extends Component {
           }}
         />
         <SectionFour />
-        <SectionFive />
+        <SectionFive
+          onCheckProductBeforeAdd={(product) => {
+            this.checkProductBeforeAdd(product);
+          }}
+        />
       </div>
     );
   }

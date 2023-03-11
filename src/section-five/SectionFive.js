@@ -216,11 +216,14 @@ export default class SectionFive extends Component {
           <div className="text-center pb-4">
             <h2>Recomended Products</h2>
           </div>
-          <div className="row g-3">
+          <div className="row g-4">
             {this.RecommendProducts.map((product) => {
               return (
-                <div className="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl">
-                  <div className="product-item-box bg-white p-2 border ">
+                <div
+                  className="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl"
+                  key={product.id}
+                >
+                  <div className="product-item-box bg-white p-2 position-relative">
                     <div className="text-center py-4 nav-link d-flex justify-content-center align-items-center">
                       <img src={product.image} alt={product.title} />
                     </div>
@@ -237,10 +240,10 @@ export default class SectionFive extends Component {
                           value={product.rating.rate}
                         />
                       </div>
-                      <div className="pb-3">
+                      <div className="pb-3 position-relative highIndex">
                         <p className="fs-5 fw-semibold">${product.price}</p>
                       </div>
-                      <div className="product-btns-parent product-absolute position-absolute rounded-4 bg-white d-flex gap-1 p-2">
+                      <div className="product-btns-parent product-btn-hover rounded-4 bg-white d-flex gap-1 px-2 pt-3 pb-2">
                         <button className="btn rounded-1">
                           <FontAwesomeIcon icon="fa-regular fa-heart" />
                         </button>
@@ -264,6 +267,11 @@ export default class SectionFive extends Component {
                 </div>
               );
             })}
+          </div>
+          <div className="py-5 text-center m-auto">
+            <button className="btn btn-outline-secondary rounded-5 px-5 py-2">
+              Show More
+            </button>
           </div>
         </div>
       </section>
