@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./SectionFive.css";
 import ReactStars from "react-stars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Countdown from "react-countdown";
+
 export default class SectionFive extends Component {
   constructor(props) {
     super(props);
@@ -208,6 +210,21 @@ export default class SectionFive extends Component {
         },
       },
     ];
+    this.offerTimeChecker = this.offerTimeChecker.bind(this);
+  }
+
+  offerTimeChecker(product) {
+    let currentTime = new Date().getTime();
+    let offerTime = new Date(product.offerEndDate);
+    let ProductOfferEndToMilisecond = offerTime.getTime();
+
+    if (ProductOfferEndToMilisecond > currentTime) {
+      return (
+        <div className="product-item-sale-badge position-absolute top-0 start-0 m-3">
+          <button className="btn badge text-bg-danger">Sale</button>
+        </div>
+      );
+    }
   }
   render() {
     return (
@@ -227,6 +244,8 @@ export default class SectionFive extends Component {
                     <div className="text-center py-4 nav-link d-flex justify-content-center align-items-center">
                       <img src={product.image} alt={product.title} />
                     </div>
+
+                    {!!product.priceInOffer && this.offerTimeChecker(product)}
                     <div className="text-center w-100 m-auto my-2">
                       <div className=" m-auto">
                         <strong className="nav-link">{product.title}</strong>

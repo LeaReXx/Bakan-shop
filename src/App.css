@@ -130,6 +130,8 @@ div {
 
 }
 
+
+
 @media screen and (min-width: 992px) {
   .product-btn-hover {
     visibility: hidden;
