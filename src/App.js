@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 import Header from "./Header/Header";
 import SectionOne from "./section-one/SectionOne";
 import SectionTwo from "./section-two/SectionTwo";
@@ -14,7 +15,8 @@ import SectionThree from "./section-three/SectionThree";
 import SectionFour from "./section-four/SectionFour";
 import SectionFive from "./section-five/SectionFive";
 import SectionSix from "./section-six/SectionSix";
-library.add(fas, far);
+import Footer from "./footer/Footer";
+library.add(fas, far, fab);
 
 export default class App extends Component {
   constructor(props) {
@@ -138,6 +140,7 @@ export default class App extends Component {
         />
 
         <SectionSix />
+        <Footer />
       </div>
     );
   }
