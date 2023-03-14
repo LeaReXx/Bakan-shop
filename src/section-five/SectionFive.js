@@ -228,7 +228,7 @@ export default class SectionFive extends Component {
   render() {
     return (
       <section className="bg-white">
-        <div className="container-fluid container-lg py-5">
+        <div className="container-fluid container-lg pt-5 pb-4">
           <div className="text-center pb-4">
             <h2>Recomended Products</h2>
           </div>
@@ -237,7 +237,7 @@ export default class SectionFive extends Component {
               // console.log(!!product.priceInOffer);
               return (
                 <div
-                  className="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl"
+                  className="col-12 col-sm-6 col-lg-4 col-xl-3"
                   key={product.id}
                 >
                   <div className="product-item-box bg-white p-2 position-relative">
