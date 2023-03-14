@@ -224,6 +224,19 @@ export default class Footer extends Component {
             })}
           </div>
         </div>
+        <div className="footer-bottom bg-white mx-auto">
+          <div className="container-fluid container-lg border-1 border-top py-3 d-flex justify-content-between ">
+            <div className="d-flex">
+              <p>©Copyright 2023, Redesign by </p>
+              <a href="https://github.com/LeaReXx" className="nav-link px-1">
+                Sepehr Aghapour
+              </a>
+            </div>
+            <div>
+              <img src="./imgs/footer/payment.png" alt="Payments" />
+            </div>
+          </div>
+        </div>
       </footer>
     );
   }
