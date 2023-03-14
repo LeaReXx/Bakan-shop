@@ -1,8 +1,9 @@
-footer {
+.footer-top {
   background-color: var(--blue-color);
 }
 
-.footer-top {
+.footer-top > div,
+.footer-middle > div {
   max-width: 1320px;
 }
 
@@ -33,5 +34,28 @@ footer {
   transform: translateY(-50%);
   right: 0;
   color: #fff;
+  background-color: var(--main-color);
+}
+
+.footer-middle-contact > div {
+  margin: 0.5rem 0;
+}
+
+.footer-middle-contact > div > div {
+  width: 40px;
+  height: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.footer-middle-contact svg {
+  color: var(--main-color) !important;
+}
+
+.footer-nav-item-parent strong::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 40px;
+  height: 2px;
   background-color: var(--main-color);
 }
