@@ -152,7 +152,7 @@ export default class Header extends Component {
                       return (
                         <div key={item.id}>
                           <div className="shopping-cart-item d-flex px-3 py-1 gap-3">
-                            <div>
+                            <div className="py-2">
                               <img
                                 src={item.image}
                                 alt="Shopping Cart Item img"
@@ -202,7 +202,7 @@ export default class Header extends Component {
                           Transport cost:
                         </p>
                         <span className="text-success fs-5 fw-semibold">
-                          {this.props.userTotalPrice > 20 ? "Free" : "$10"}
+                          {this.props.userTotalPrice > 50 ? "Free" : "$10.00"}
                         </span>
                       </div>
 
