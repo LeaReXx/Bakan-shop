@@ -235,9 +235,19 @@ nav > div {
   max-height: 350px;
   overflow: auto;
 }
+
 .shopping-cart-item > div:first-child {
   max-width: 60px;
 }
+
+.shopping-cart-item strong {
+  overflow: hidden;
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: pre-wrap;
+}
+
 @media screen and (min-width: 992px) {
   .mobile-nav-parent.active {
     visibility: hidden !important;
