@@ -248,6 +248,31 @@ nav > div {
   white-space: pre-wrap;
 }
 
+.shopping-cart-bottom-btns button {
+  transition: all 0.2s;
+
+}
+
+.shopping-cart-bottom-btns button a {
+  text-decoration: none;
+  color: inherit;
+}
+.shopping-cart-bottom-btns button:nth-child(1) {
+  outline: 1px solid #000;
+  color: #000;
+}
+
+.shopping-cart-bottom-btns button:nth-child(2) {
+  background-color: #000;
+  color: #fff;
+}
+
+.shopping-cart-bottom-btns button:hover {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+  outline: none;
+}
+
 @media screen and (min-width: 992px) {
   .mobile-nav-parent.active {
     visibility: hidden !important;

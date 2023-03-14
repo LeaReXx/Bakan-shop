@@ -194,12 +194,12 @@ export default class Header extends Component {
                   <div className="border-muted border-top fs-6 p-2">
                     <div>
                       <div className="d-flex justify-content-between align-items-center">
-                        <p className="fw-semibold my-1">
+                        <p className="my-1">
                           <FontAwesomeIcon
                             icon="fa-solid fa-truck-fast"
                             className="fa-fw text-muted fs-5"
                           />
-                          Transport cost:
+                          Transport Cost:
                         </p>
                         <span className="text-success fs-5 fw-semibold">
                           {this.props.userTotalPrice > 50 ? "Free" : "$10.00"}
@@ -207,17 +207,21 @@ export default class Header extends Component {
                       </div>
 
                       <div className="d-flex justify-content-between align-items-center">
-                        <p className="fw-semibold my-1">
+                        <p className="my-1">
                           <FontAwesomeIcon
                             icon="fa-solid fa-file-invoice-dollar"
                             className="fa-fw text-muted fs-5"
                           />
-                          Total price:
+                          Total Price:
                         </p>
                         <span className="primary-color fs-5 fw-semibold">
                           ${this.props.userTotalPrice}
                         </span>
                       </div>
+                    </div>
+                    <div className="shopping-cart-bottom-btns my-3 text-center d-flex justify-content-evenly">
+                      <button className="btn rounded-1 py-2 px-4"><a href="https://reactjs.org/">VIEW CART</a></button>
+                      <button className="btn rounded-1 py-2 px-4"><a href="https://reactjs.org/">CHECKOUT</a></button>
                     </div>
                   </div>
                 )}
