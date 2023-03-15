@@ -9,6 +9,8 @@ This project was created with ReactJS
 - Swiper
 - Bootstrap
 - FontAwesome
+- React Countdown
+- React Stars
 
 ## Available Script
 In the project directory, you can run:
