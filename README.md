@@ -1,5 +1,4 @@
-# Getting Started with Create React App
-
+# Bakan Shop React Template
 This project was created with ReactJS
 
 #### You can see the preview of the project on this page
@@ -12,7 +11,9 @@ This project was created with ReactJS
 - React Countdown
 - React Stars
 
-## Available Script
+## Getting Started with Create React App
+
+### Available Script
 In the project directory, you can run:
 
 ### `npm start`
